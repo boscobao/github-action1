@@ -6,9 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run a git clone
-        run: |
-          git clone https://github.com/boscobao/github-action1.git 
-          cd github-action1
+        uses: actions/checkout@v3
 
       - name: install python
         run: pip install pytest
